@@ -10,6 +10,7 @@ import java.util.Map;
 public class TranslationServelet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
 
     @Override
@@ -26,13 +27,13 @@ public class TranslationServelet extends HttpServlet {
         writer.println("<html>");
 
         String result = dictionary.get(search);
-        if (result != null) {
+        if(result != null){
             writer.println("Word: " + search);
             writer.println("Result: " + result);
         } else {
             writer.println("Not found");
         }
+
         writer.println("</html>");
     }
 }
-

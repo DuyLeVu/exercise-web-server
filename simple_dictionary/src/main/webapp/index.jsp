@@ -12,10 +12,18 @@
     <title>Simple Dictionary</title>
 </head>
 <body>
-<h2>Vietnamese Dictionary</h2>
-<form method="post" action="/translate">
-    <input type="text" name="txtSearch" placeholder="Enter your word: "/>
-    <input type="submit" value="Search"/>
+<%--<h2>Vietnamese Dictionary</h2>--%>
+<%--<form method="post" action="/translate">--%>
+<%--    <input type="text" name="txtSearch" placeholder="Enter your word: "/>--%>
+<%--    <input type="submit" value="Search"/>--%>
+<%--</form>--%>
+
+<h2>Product Discount Calculator</h2>
+<form method="post" action="/display-discount">
+    <input type="text" name="productDes" placeholder="Product Description: "/>
+    <input type="text" name="productPrice" placeholder="Product Price: "/>
+    <input type="text" name="productDis" placeholder="Product Discount Percent: "/>
+    <input type="submit" value="Calculate Discount"/>
 </form>
 </body>
 </html>
